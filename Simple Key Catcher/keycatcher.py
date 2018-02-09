@@ -25,13 +25,11 @@ def waitForKeyPress():
     while True:
         ch = getch()
 
-        if ch == "q": # Or skip this check and just break
+        if ch == "1": # Or skip this check and just break
             breakNow = True
             break
-        elif ch == "d":
-            print "Sending Disturbance"
-        elif ch == "b":
-            print "Sending Fault"
+        else:
+            print "Wait for Key Press received: %s" % ch
 
 def main():
     threads = []
